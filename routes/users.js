@@ -5,9 +5,10 @@ let sum = 1;
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   value += 2;    
-  sum *= value;   
+  sum *= value;  
+  const responseMessage = `Total is : ${sum}`;
 
-  res.send(`Total is: ${sum}`);
+    res.send(responseMessage);
 });
 
 
